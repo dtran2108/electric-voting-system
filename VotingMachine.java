@@ -4,13 +4,6 @@ import java.util.Map;
 
 /**
  * VotingMachine — the coordinator of the entire voting flow (the poll worker).
- *
- * It is the only entry point the UI is allowed to call. It chains together
- * "authenticate -> eligibility check -> cast ballot -> mark as voted",
- * ensuring the UI cannot bypass any rule.
- *
- * Depends only on AuthInterface (not directly on PinAuthenticator),
- * so the authentication mechanism is pluggable.
  */
 public class VotingMachine {
 

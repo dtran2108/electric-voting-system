@@ -6,15 +6,6 @@ import java.util.Map;
 
 /**
  * VoterRegistry — the master list of registered voters.
- *
- * Adopts two ideas from the teammate's VotingSystem class:
- *   - Serializable, so a future DataManager can save/restore state to disk.
- *   - markAsVoted(voterId) / clearAllVotedFlags() (their resetVoterData())
- *     for duplicate-vote prevention and admin reset.
- *
- * Storage is the Map<String,Voter> the UML requires. Voted state lives on
- * each Voter as hasVoted, so findById(voterId).hasVoted() answers the
- * duplicate-vote question — no separate HashSet needed.
  */
 public class VoterRegistry implements Serializable {
 

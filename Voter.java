@@ -5,14 +5,6 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * Voter — a registered citizen.
- *
- * Built on the teammate's design: the voter supplies only name and birthday,
- * and the system auto-encodes a purely numeric voterId from those two fields
- * (per-character ASCII codes + YYYYMMDD). Serializable is kept so a future
- * DataManager can persist registered voters to disk.
- *
- * Extended to satisfy the UML contract used by VotingMachine: a hasVoted flag,
- * isEligible(votingAge), markVoted() and clearVotedFlag().
  */
 public class Voter implements Serializable {
 

@@ -2,10 +2,6 @@ import java.time.Instant;
 
 /**
  * Ballot represents one anonymous ballot.
- *
- * Current design:
- * - Does NOT store voterId to keep ballots anonymous.
- * - If traceability is required in the future, add voterId here.
  */
 public class Ballot {
 

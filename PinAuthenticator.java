@@ -3,11 +3,6 @@ import java.util.Map;
 
 /**
  * PinAuthenticator — verifies a voter against a stored PIN.
- *
- * The map is voterId -> pin. Voters set their own PIN at registration time
- * via setPin(); the admin no longer hard-codes credentials. A future
- * IdCardAuthenticator or biometric implementation would simply implement
- * AuthInterface differently.
  */
 public class PinAuthenticator implements AuthInterface {
 
