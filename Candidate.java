@@ -1,7 +1,7 @@
 public class Candidate {
-    private int candidateNumber;
-    private String name;
-    private String party;
+    private final int candidateNumber;
+    private final String name;
+    private final String party;
 
     public Candidate(int candidateNumber, String name, String party){
         this.candidateNumber = candidateNumber;
